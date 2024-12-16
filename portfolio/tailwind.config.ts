@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
+const textShadowPlugin = require("tailwindcss-textshadow");
 
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textShadow: {
+        glow: "0 0 8px rgba(82, 182, 154, 0.8), 0 0 15px rgba(82, 182, 154, 0.5)",
+      },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [textShadowPlugin],
+};

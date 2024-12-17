@@ -5,7 +5,7 @@ export default function Projects() {
         {/* Contenedor de tarjetas con grid responsivo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {/* Tarjeta 4 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+          <div className="w-full max-w-sm overflow-hidden bg-[rgba(0,109,119,0.8)]  rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=igOPSYdE_Xc"
               target="_blank"
@@ -40,7 +40,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 3 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+          <div className="w-full max-w-sm overflow-hidden bg-[rgba(0,109,119,0.8)]  rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=IwXr4UKzs64"
               target="_blank"
@@ -74,7 +74,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 2 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+          <div className="w-full max-w-sm overflow-hidden bg-[rgba(0,109,119,0.8)]  rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=VizIYWYvxLQ"
               target="_blank"
@@ -108,7 +108,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 1 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+          <div className="w-full max-w-sm overflow-hidden bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=ZJ-Y7EWapTo"
               target="_blank"

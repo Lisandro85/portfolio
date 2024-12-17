@@ -7,10 +7,8 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Función para verificar si la ruta es activa
   const isActive = (path: string) => pathname === path;
 
-  // Cerrar el menú cuando se hace clic en un enlace
   const handleLinkClick = () => {
     if (isOpen) {
       setIsOpen(false);
@@ -63,7 +61,7 @@ const Navbar = () => {
         >
           <Link
             href="/home"
-            onClick={handleLinkClick} // Cerrar el menú al hacer clic
+            onClick={handleLinkClick}
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/home") ? "text-[#76c893] text-glow" : "hover:text-glow"
             }`}
@@ -72,7 +70,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/about"
-            onClick={handleLinkClick} // Cerrar el menú al hacer clic
+            onClick={handleLinkClick}
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/about")
                 ? "text-[#76c893] text-glow"
@@ -83,7 +81,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/projects"
-            onClick={handleLinkClick} // Cerrar el menú al hacer clic
+            onClick={handleLinkClick}
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/projects")
                 ? "text-[#76c893] text-glow"
@@ -94,7 +92,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/contact"
-            onClick={handleLinkClick} // Cerrar el menú al hacer clic
+            onClick={handleLinkClick}
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/contact")
                 ? "text-[#76c893] text-glow"

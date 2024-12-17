@@ -6,7 +6,7 @@ import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 export default function Home() {
   return (
     <div className="flex items-center justify-center mt-10 mb-80 px-4">
-      <div className="w-full mx-1 bg-slate-800 bg-opacity-80 rounded-lg shadow-md overflow-hidden mb-6">
+      <div className="w-full mx-1 bg-[rgba(0,109,119,0.8)]  rounded-lg shadow-md overflow-hidden mb-6">
         <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-8">
           {/* Imagen */}
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden group mx-auto md:mx-0">

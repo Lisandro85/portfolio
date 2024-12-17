@@ -9,7 +9,8 @@ const DownloadEspCVButton: React.FC = () => {
 
     Swal.fire({
       title: "Are you sure?",
-      text: "Do you want to download the CV?",
+      text: "Do you want to download the Spanish CV?",
+      color: "#06d6a0",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Yes, download",
@@ -17,6 +18,7 @@ const DownloadEspCVButton: React.FC = () => {
       customClass: {
         confirmButton: "bg-[#52b69a] text-white",
         cancelButton: "bg-[#d9534f] text-white",
+        popup: "bg-slate-800 bg-opacity-80 text-white",
       },
     }).then((result) => {
       if (result.isConfirmed) {
@@ -38,7 +40,7 @@ const DownloadEspCVButton: React.FC = () => {
       className="bg-[#52b69a] text-white py-2 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm md:text-base rounded-md hover:bg-[#76c893] transition duration-300 font-Exo-2 text-center inline-flex items-center justify-center"
     >
       <Flag code="ES" width={30} height={20} className="mr-2" />
-      Download CV
+      Descargar CV
     </a>
   );
 };

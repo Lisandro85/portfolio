@@ -9,7 +9,8 @@ const DownloadEngCVButton: React.FC = () => {
 
     Swal.fire({
       title: "Are you sure?",
-      text: "Do you want to download the CV?",
+      text: "Do you want to download the English CV?",
+      color: "#06d6a0",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Yes, download",
@@ -17,6 +18,7 @@ const DownloadEngCVButton: React.FC = () => {
       customClass: {
         confirmButton: "bg-[#52b69a] text-white",
         cancelButton: "bg-[#d9534f] text-white",
+        popup: "bg-slate-800 bg-opacity-80 text-white",
       },
     }).then((result) => {
       if (result.isConfirmed) {

@@ -6,11 +6,11 @@ export default function AboutMe() {
         {" "}
         {/* Agregado px-4 para el margen lateral en pantallas grandes */}
         <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#06d6a0] font-genos break-words">
-          {`I am a technology and software development professional with a unique background that encompasses both security and criminal intelligence as well as programming. I began my career as a Systems Analyst and Software Developer, where I gained solid foundations in system logic and design. Later, I developed my skills in the field of security, specializing in criminal intelligence, which gave me an analytical perspective and a problem-solving approach to complex issues. Today, I work as a Full Stack Web Developer, with a specialization in Backend development.`}
+          {`I am a professional in technology and software development with a unique background that encompasses both security and criminal intelligence as well as programming. I began my career as a Systems Analyst and Software Developer, where I gained solid foundations in system logic and design. Later, I developed my skills in the field of security, specializing in criminal intelligence, which gave me an analytical perspective and a problem-solving approach to complex issues. Today, I work as a Full Stack Web Developer, with a specialization in Backend.`}
 
           {/* Tecnologías con hover y escala */}
           <span className="block mt-4">
-            I have experience using technologies such as{" "}
+            I have experience in technologies such as{" "}
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
               Node.js,
             </span>{" "}

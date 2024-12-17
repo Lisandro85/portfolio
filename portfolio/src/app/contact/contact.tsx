@@ -10,8 +10,8 @@ export default function Contact() {
 
       {/* Descripción */}
       <p className="text-lg md:text-2xl mt-4 text-[#06d6a0] font-Exo-2 text-center leading-relaxed">
-        Feel free to reach out to me via LinkedIn, GitHub, or email. I'm always
-        open to new opportunities and collaborations!
+        Feel free to reach out to me via LinkedIn, GitHub, or email. I&apos;m
+        always open to new opportunities and collaborations!
       </p>
 
       {/* Enlaces con íconos */}

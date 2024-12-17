@@ -16,16 +16,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[rgba(0,109,119,0.8)] p-4 z-20">
+    <nav className="bg-[rgba(0,109,119,0.8)] p-2 z-20">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo o Título */}
-        <div className="text-[#52b69a] text-2xl font-bold font-Exo-2">
-          <Link
-            href="/"
-            className={`text-[#52b69a] text-2xl font-genos ${
-              isActive("/home") ? "text-[#76c893] text-glow" : "hover:text-glow"
-            }`}
-          >
+        <div className="text-[#06d6a0] text-4xl font-bold font-Amatic-SC ">
+          <Link href="/" className="text-[#06d6a0]  text-2xl font-Amatic-SC ">
             Backend dev &lt;&gt;
           </Link>
         </div>
@@ -62,8 +57,8 @@ const Navbar = () => {
           <Link
             href="/home"
             onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
-              isActive("/home") ? "text-[#76c893] text-glow" : "hover:text-glow"
+            className={`block sm:inline-block text-[#06d6a0] text-2xl font-bold  font-Amatic-SC  ${
+              isActive("/home") ? "text-[#06d6a0] text-glow" : "hover:text-glow"
             }`}
           >
             Home
@@ -71,9 +66,9 @@ const Navbar = () => {
           <Link
             href="/about"
             onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
+            className={`block sm:inline-block text-[#06d6a0] text-2xl font-bold font-Amatic-SC  ${
               isActive("/about")
-                ? "text-[#76c893] text-glow"
+                ? "text-[#06d6a0] text-glow"
                 : "hover:text-glow"
             }`}
           >
@@ -82,9 +77,9 @@ const Navbar = () => {
           <Link
             href="/projects"
             onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
+            className={`block sm:inline-block text-[#06d6a0] text-2xl font-bold font-Amatic-SC  ${
               isActive("/projects")
-                ? "text-[#76c893] text-glow"
+                ? "text-[#06d6a0] text-glow"
                 : "hover:text-glow"
             }`}
           >
@@ -93,9 +88,9 @@ const Navbar = () => {
           <Link
             href="/contact"
             onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
+            className={`block sm:inline-block text-[#06d6a0] text-2xl font-bold font-Amatic-SC  ${
               isActive("/contact")
-                ? "text-[#76c893] text-glow"
+                ? "text-[#06d6a0] text-glow"
                 : "hover:text-glow"
             }`}
           >

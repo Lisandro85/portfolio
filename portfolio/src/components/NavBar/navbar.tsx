@@ -79,7 +79,7 @@ const Navbar = () => {
                 : "hover:text-glow"
             }`}
           >
-            AboutMe
+            About Me
           </Link>
           <Link
             href="/projects"
@@ -101,7 +101,7 @@ const Navbar = () => {
                 : "hover:text-glow"
             }`}
           >
-            ContactMe
+            Contact Me
           </Link>
         </div>
       </div>

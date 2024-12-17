@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="mx-5 bg-slate-800 bg-opacity-80 rounded-lg shadow-md mt-10 py-10 px-4 mb-80">
+    <div className="mx-5 bg-slate-800 bg-opacity-80 rounded-lg shadow-md mt-10 py-10 px-4 -mb-96">
       {/* Título */}
       <h1 className="text-4xl md:text-5xl font-bold text-[#06d6a0] font-Exo-2 text-center">
         Contact Me

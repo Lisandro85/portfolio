@@ -1,6 +1,7 @@
 import DownloadCVButton from "@/components/DownLoadSpanishCv/downLoadEspCv";
 import DownloadItaCVButton from "@/components/DownLoadItalianCv/downLoadItaCv";
 import Image from "next/image";
+import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
             <div className="mt-6 flex flex-col md:flex-row justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4">
               <DownloadCVButton />
               <DownloadItaCVButton />
+              <DownloadEngCVButton />
             </div>
           </div>
         </div>

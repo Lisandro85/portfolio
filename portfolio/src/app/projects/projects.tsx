@@ -2,11 +2,10 @@ export default function Projects() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-800 bg-transparent mb-20">
       <div className="mt-6 flex-grow px-4 py-4">
-        {" "}
         {/* Contenedor de tarjetas con grid responsivo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {/* Tarjeta 4 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4">
+          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=igOPSYdE_Xc"
               target="_blank"
@@ -23,10 +22,11 @@ export default function Projects() {
                 Buddify - Social Network
               </h3>
               <p className="text-sm text-[#83c5be] mb-4">
-                Technologies: NestJS, TypeORM, TypeScript, PostgreSQL, Next.js,
-                Tailwind CSS. <br />
-                Features: Create and join events, user profiles, and activity
-                exploration.
+                <span className="font-bold text-[#2a9d8f]">Technologies:</span>{" "}
+                NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.{" "}
+                <br />
+                <span className="font-bold text-[#2a9d8f]">Features:</span>{" "}
+                Create and join events, user profiles, and activity exploration.
               </p>
               <a
                 href="https://github.com/Lisandro85/Buddify"
@@ -40,7 +40,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 3 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4">
+          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=IwXr4UKzs64"
               target="_blank"
@@ -57,8 +57,10 @@ export default function Projects() {
                 Ecommerce API
               </h3>
               <p className="text-sm text-[#83c5be] mb-4">
-                Technologies: NestJS, PostgreSQL, TypeScript, TypeORM. <br />
-                Features: Product, user, and order management.
+                <span className="font-bold text-[#2a9d8f]">Technologies:</span>{" "}
+                NestJS, PostgreSQL, TypeScript, TypeORM. <br />
+                <span className="font-bold text-[#2a9d8f]">Features:</span>{" "}
+                Product, user, and order management.
               </p>
               <a
                 href="https://github.com/Lisandro85/ecommerceDeploy"
@@ -72,7 +74,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 2 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4">
+          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=VizIYWYvxLQ"
               target="_blank"
@@ -89,8 +91,10 @@ export default function Projects() {
                 Rest-Bar Scheduling System
               </h3>
               <p className="text-sm text-[#83c5be] mb-4">
-                Technologies: TypeScript, PostgreSQL, Express, React. <br />
-                Features: Real-time reservations and customer management.
+                <span className="font-bold text-[#2a9d8f]">Technologies:</span>{" "}
+                TypeScript, PostgreSQL, Express, React. <br />
+                <span className="font-bold text-[#2a9d8f]">Features:</span>{" "}
+                Real-time reservations and customer management.
               </p>
               <a
                 href="https://github.com/Lisandro85/sistema-de-turnos-resto-bar"
@@ -104,7 +108,7 @@ export default function Projects() {
           </div>
 
           {/* Tarjeta 1 */}
-          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4">
+          <div className="w-full max-w-sm overflow-hidden bg-slate-800 bg-opacity-80 rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a
               href="https://www.youtube.com/watch?v=ZJ-Y7EWapTo"
               target="_blank"
@@ -121,9 +125,11 @@ export default function Projects() {
                 Movie Platform
               </h3>
               <p className="text-sm text-[#83c5be] mb-4">
-                Technologies: JavaScript, HTML, CSS, Bootstrap, Mongoose,
-                MongoDB, Express. <br />
-                Features: Movie catalog and user management.
+                <span className="font-bold text-[#2a9d8f]">Technologies:</span>{" "}
+                JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.{" "}
+                <br />
+                <span className="font-bold text-[#2a9d8f]">Features:</span>{" "}
+                Movie catalog and user management.
               </p>
               <a
                 href="https://github.com/Lisandro85/Movies-Plataforma"

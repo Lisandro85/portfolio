@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="mx-5 bg-slate-800 bg-opacity-80 mt-10 rounded-lg shadow-md overflow-hidden mb-8 px-4 py-8">
+    <div className="mx-5 bg-slate-800 bg-opacity-80 mt-10 rounded-lg shadow-md overflow-hidden mb-80 px-4 py-8">
       {/* Contenedor con margen a los lados */}
       <div className="max-w-4xl mx-auto text-center px-4">
         {" "}

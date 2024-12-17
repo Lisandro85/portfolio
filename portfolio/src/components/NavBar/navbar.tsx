@@ -10,8 +10,15 @@ const Navbar = () => {
   // Función para verificar si la ruta es activa
   const isActive = (path: string) => pathname === path;
 
+  // Cerrar el menú cuando se hace clic en un enlace
+  const handleLinkClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <nav className="bg-[rgba(0,109,119,0.8)] p-4">
+    <nav className="bg-[rgba(0,109,119,0.8)] p-4 z-20">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo o Título */}
         <div className="text-[#52b69a] text-2xl font-bold font-Exo-2">
@@ -21,27 +28,51 @@ const Navbar = () => {
               isActive("/home") ? "text-[#76c893] text-glow" : "hover:text-glow"
             }`}
           >
-            Backend dev &lt;HOME&gt;
+            Backend dev &lt;&gt;
           </Link>
         </div>
 
         {/* Botón hamburguesa (solo visible en móviles) */}
         <button
-          className="sm:hidden text-[#52b69a] focus:outline-none"
+          className="sm:hidden text-[#52b69a] focus:outline-none z-30"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? "✕" : "☰"} {/* Ícono hamburguesa */}
+          <span
+            className={`block w-6 h-0.5 bg-[#52b69a] my-1 transition-transform ${
+              isOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 bg-[#52b69a] my-1 transition-opacity ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 bg-[#52b69a] my-1 transition-transform ${
+              isOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
         </button>
 
         {/* Enlaces de navegación */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } sm:flex sm:space-x-4 text-center`}
+          } sm:flex sm:space-x-4 text-center fixed inset-0 bg-[rgba(0,0,0,0.7)] sm:bg-transparent sm:relative sm:flex sm:space-x-6 sm:block sm:space-y-0 space-y-4 sm:space-y-0 pt-16 sm:pt-0 sm:static px-4 sm:px-0 z-40`}
         >
           <Link
+            href="/home"
+            onClick={handleLinkClick} // Cerrar el menú al hacer clic
+            className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
+              isActive("/home") ? "text-[#76c893] text-glow" : "hover:text-glow"
+            }`}
+          >
+            Home
+          </Link>
+          <Link
             href="/about"
+            onClick={handleLinkClick} // Cerrar el menú al hacer clic
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/about")
                 ? "text-[#76c893] text-glow"
@@ -52,6 +83,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/projects"
+            onClick={handleLinkClick} // Cerrar el menú al hacer clic
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/projects")
                 ? "text-[#76c893] text-glow"
@@ -62,6 +94,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/contact"
+            onClick={handleLinkClick} // Cerrar el menú al hacer clic
             className={`block sm:inline-block text-[#52b69a] text-xl font-Exo-2 ${
               isActive("/contact")
                 ? "text-[#76c893] text-glow"

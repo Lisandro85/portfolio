@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center mt-10 mb-24 px-4">
+    <div className="flex items-center justify-center mt-10 mb-80 px-4">
       {/* Contenedor principal con margen de 5px a la izquierda y derecha */}
       <div className="w-full mx-1 bg-slate-800 bg-opacity-80 rounded-lg shadow-md overflow-hidden mb-6">
         <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-8">

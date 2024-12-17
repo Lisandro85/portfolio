@@ -25,9 +25,9 @@ export default function Home() {
               Lisandro Bedotti
             </h2>
             <p className="text-lg md:text-2xl mt-2 text-[#06d6a0] font-Exo-2">
-              "Hello! I&apos;m a software developer passionate about creating
-              dynamic web solutions, with a strong focus on backend
-              technologies."
+              &quot;Hello! I&apos;m a software developer passionate about
+              creating dynamic web solutions, with a strong focus on backend
+              technologies.&quot;
             </p>
 
             {/* Botones de descarga */}

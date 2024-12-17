@@ -1,5 +1,6 @@
 import DownloadCVButton from "@/components/DownLoadSpanishCv/downLoadEspCv";
 import DownloadItaCVButton from "@/components/DownLoadItalianCv/downLoadItaCv";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,10 +10,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-8">
           {/* Imagen */}
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden group mx-auto md:mx-0">
-            <img
+            <Image
               className="w-full h-full object-cover filter grayscale transition duration-300 group-hover:grayscale-0"
               src="/assets/perfilFoto.jpg"
               alt="Profile Image"
+              width={500} // Añade el valor de ancho (en píxeles)
+              height={500} // Añade el valor de altura (en píxeles)
             />
           </div>
           {/* Texto al costado de la imagen */}
@@ -21,7 +24,7 @@ export default function Home() {
               Lisandro Bedotti
             </h2>
             <p className="text-lg md:text-2xl mt-2 text-[#06d6a0] font-Exo-2">
-              Hello! I'm a software developer with a passion for web
+              Hello! I&apos;m a software developer with a passion for web
               development,
               <br className="hidden md:block" /> and I specialize in backend
               technologies.

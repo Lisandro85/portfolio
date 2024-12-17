@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,6 +37,9 @@ body {
 }
 .font-Amatic-SC {
   font-family: "Amatic SC", cursive;
+}
+.font-Architects-Daughter {
+  font-family: "Architects Daughter", sans-serif;
 }
 
 .text-glow {

@@ -8,13 +8,13 @@ const DownloadEspCVButton: React.FC = () => {
     e.preventDefault();
 
     Swal.fire({
-      title: "Are you sure?",
-      html: `<p class="font-Amatic-SC">Do you want to download the English CV?</p>`,
+      title: "Estás seguro?",
+      html: `<p class="font-Amatic-SC">¿Quieres descargar el CV en Español?</p>`,
       color: "#06d6a0",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: "Yes, download",
-      cancelButtonText: "Cancel",
+      confirmButtonText: "Si, descargar",
+      cancelButtonText: "Cancelar",
       customClass: {
         confirmButton: "bg-[#52b69a] text-white text-xl py-1 px-3 rounded",
         cancelButton: "bg-[#d9534f] text-white text-xl py-1 px-3 rounded",

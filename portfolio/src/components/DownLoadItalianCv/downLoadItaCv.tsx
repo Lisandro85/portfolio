@@ -9,16 +9,18 @@ const DownloadItaCVButton: React.FC = () => {
 
     Swal.fire({
       title: "Are you sure?",
-      text: "Do you want to download the Italian CV?",
+      html: `<p class="font-Amatic-SC">Do you want to download the English CV?</p>`,
       color: "#06d6a0",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Yes, download",
       cancelButtonText: "Cancel",
       customClass: {
-        confirmButton: "bg-[#52b69a] text-white",
-        cancelButton: "bg-[#d9534f] text-white",
-        popup: "bg-slate-800 bg-opacity-80 text-white",
+        confirmButton: "bg-[#52b69a] text-white text-xl py-1 px-3 rounded",
+        cancelButton: "bg-[#d9534f] text-white text-xl py-1 px-3 rounded",
+        popup:
+          " text-2xl bg-slate-800 bg-opacity-80 text-white font-Amatic-SC max-w-md",
+        title: "text-3xl font-Amatic-SC",
       },
     }).then((result) => {
       if (result.isConfirmed) {

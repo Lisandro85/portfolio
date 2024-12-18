@@ -37,7 +37,7 @@ const DownloadEngCVButton: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleDownload}
-      className="bg-[#52b69a] text-emerald-900 py-1 px-4 sm:py-1 sm:px-4 text-sm sm:text-base md:text-lg font-bold font-Amatic-SC rounded-md hover:bg-[#76c893] transition duration-300 text-center inline-flex items-center justify-center"
+      className="bg-[#52b69a] text-emerald-900 py-1 px-4 sm:py-1 sm:px-4 text-lg sm:text-base md:text-lg font-bold font-Amatic-SC rounded-md hover:bg-[#76c893] transition duration-300 text-center inline-flex items-center justify-center"
     >
       <Flag code="GB" width={30} height={20} className="mr-2" />
       Download CV

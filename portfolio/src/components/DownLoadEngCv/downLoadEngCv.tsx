@@ -18,7 +18,7 @@ const DownloadEngCVButton: React.FC = () => {
       customClass: {
         confirmButton: "bg-[#52b69a] text-white",
         cancelButton: "bg-[#d9534f] text-white",
-        popup: "bg-slate-800 bg-opacity-80 text-white",
+        popup: " bg-slate-800 bg-opacity-80 text-white",
       },
     }).then((result) => {
       if (result.isConfirmed) {

@@ -18,10 +18,10 @@ export default function Projects() {
               />
             </a>
             <div className="p-4">
-              <h3 className="text-2xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
+              <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
                 Buddify - Social Network
               </h3>
-              <p className="text-xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
+              <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
                 NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.{" "}
                 <br />
@@ -32,7 +32,7 @@ export default function Projects() {
                 href="https://github.com/Lisandro85/Buddify"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
+                className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
                 See Repository
               </a>
@@ -53,10 +53,10 @@ export default function Projects() {
               />
             </a>
             <div className="p-4">
-              <h3 className="text-2xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
+              <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
                 Ecommerce API
               </h3>
-              <p className="text-xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
+              <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
                 NestJS, PostgreSQL, TypeScript, TypeORM. <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
@@ -66,7 +66,7 @@ export default function Projects() {
                 href="https://github.com/Lisandro85/ecommerceDeploy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
+                className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
                 See Repository
               </a>
@@ -87,10 +87,10 @@ export default function Projects() {
               />
             </a>
             <div className="p-4">
-              <h3 className="text-2xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
+              <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
                 Rest-Bar Scheduling System
               </h3>
-              <p className="text-xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
+              <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
                 TypeScript, PostgreSQL, Express, React. <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
@@ -100,7 +100,7 @@ export default function Projects() {
                 href="https://github.com/Lisandro85/sistema-de-turnos-resto-bar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
+                className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
                 See Repository
               </a>
@@ -121,10 +121,10 @@ export default function Projects() {
               />
             </a>
             <div className="p-4">
-              <h3 className="text-2xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
+              <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
                 Movie Platform
               </h3>
-              <p className="text-xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
+              <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
                 JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.{" "}
                 <br />
@@ -135,7 +135,7 @@ export default function Projects() {
                 href="https://github.com/Lisandro85/Movies-Plataforma"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
+                className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
                 See Repository
               </a>

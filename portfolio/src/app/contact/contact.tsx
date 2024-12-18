@@ -9,7 +9,7 @@ export default function Contact() {
       </h1>
 
       {/* Descripción */}
-      <p className="text-5xl sm:text-3xl md:text-4xl mt-4 text-[#06d6a0] font-bold font-Amatic-SC text-center leading-relaxed">
+      <p className="text-5xl sm:text-3xl md:text-4xl mt-4 text-[#06d6a0] font-bold font-Amatic-SC text-center leading-snug sm:leading-normal md:leading-relaxed">
         Feel free to reach out to me via LinkedIn, GitHub, or email. I&apos;m
         always open to new opportunities and collaborations!
       </p>

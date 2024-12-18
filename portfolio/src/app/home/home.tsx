@@ -20,10 +20,10 @@ export default function Home() {
           </div>
           {/* Texto al costado de la imagen */}
           <div className="text-center md:text-left">
-            <h2 className="text-5xl sm:text-4xl md:text-6xl font-bold text-[#06d6a0] font-Amatic-SC">
+            <h2 className="text-5xl sm:text-5xl md:text-6xl font-bold text-[#06d6a0] font-Amatic-SC">
               Lisandro Bedotti
             </h2>
-            <p className="text-2xl sm:text-3xl md:text-4xl mt-2 text-[#06d6a0] font-Amatic-SC leading-relaxed">
+            <p className="text-4xl sm:text-4xl md:text-5xl mt-2 text-[#06d6a0] font-Amatic-SC leading-relaxed">
               &quot;Hello! I&apos;m a software developer of dynamic web
               solutions,
               <br /> with a strong focus on backend technologies.&quot;

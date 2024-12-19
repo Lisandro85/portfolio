@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"; // Asegúrate de agregar esta línea al principio
 
 import { useLanguage } from "@/context/LanguageContext"; // Importar el contexto de idioma

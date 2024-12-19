@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 
 const useTranslations = (page: string) => {
   const { locale } = useLanguage(); // Obtener el idioma actual
-  const [translations, setTranslations] = useState<any>({});
+  const [translations, setTranslations] = useState<{ [key: string]: string }>(
+    {}
+  );
 
   // Cargar las traducciones del archivo correspondiente
   useEffect(() => {

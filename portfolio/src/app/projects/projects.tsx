@@ -1,4 +1,15 @@
+"use client"; // Agrega esta línea para indicar que este componente se ejecuta en el cliente
+
+import useTranslations from "@/components/HoockTraslate/hookTraslate";
+
 export default function Projects() {
+  const translations = useTranslations("projects");
+
+  // Verificar si las traducciones no están disponibles
+  if (!translations) {
+    return <div>Loading...</div>; // Puedes mostrar un mensaje de carga mientras esperas las traducciones
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-800 bg-transparent mb-80">
       <div className="mt-6 flex-grow px-4 py-4">
@@ -19,14 +30,16 @@ export default function Projects() {
             </a>
             <div className="p-4">
               <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
-                Buddify - Social Network
+                {translations.project4?.title || "Buddify - Social Network"}
               </h3>
               <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
-                NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.{" "}
+                {translations.project4?.technologies ||
+                  "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS."}{" "}
                 <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
-                Create and join events, user profiles, and activity exploration.
+                {translations.project4?.features ||
+                  "Create and join events, user profiles, and activity exploration."}
               </p>
               <a
                 href="https://github.com/Lisandro85/Buddify"
@@ -34,7 +47,8 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
-                See Repository
+                {translations.seeRepository || "See Repository"}{" "}
+                {/* Traducción dinámica */}
               </a>
             </div>
           </div>
@@ -54,13 +68,16 @@ export default function Projects() {
             </a>
             <div className="p-4">
               <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
-                Ecommerce API
+                {translations.project3?.title || "Ecommerce API"}
               </h3>
               <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
-                NestJS, PostgreSQL, TypeScript, TypeORM. <br />
+                {translations.project3?.technologies ||
+                  "NestJS, PostgreSQL, TypeScript, TypeORM."}{" "}
+                <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
-                Product, user, and order management.
+                {translations.project3?.features ||
+                  "Product, user, and order management."}
               </p>
               <a
                 href="https://github.com/Lisandro85/ecommerceDeploy"
@@ -68,7 +85,8 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
-                See Repository
+                {translations.seeRepository || "See Repository"}{" "}
+                {/* Traducción dinámica */}
               </a>
             </div>
           </div>
@@ -88,13 +106,16 @@ export default function Projects() {
             </a>
             <div className="p-4">
               <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
-                Rest-Bar Scheduling System
+                {translations.project2?.title || "Rest-Bar Scheduling System"}
               </h3>
               <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
-                TypeScript, PostgreSQL, Express, React. <br />
+                {translations.project2?.technologies ||
+                  "TypeScript, PostgreSQL, Express, React."}{" "}
+                <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
-                Real-time reservations and customer management.
+                {translations.project2?.features ||
+                  "Real-time reservations and customer management."}
               </p>
               <a
                 href="https://github.com/Lisandro85/sistema-de-turnos-resto-bar"
@@ -102,7 +123,8 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
-                See Repository
+                {translations.seeRepository || "See Repository"}{" "}
+                {/* Traducción dinámica */}
               </a>
             </div>
           </div>
@@ -122,14 +144,16 @@ export default function Projects() {
             </a>
             <div className="p-4">
               <h3 className="text-4xl font-bold text-[#3ae8d4] mb-2 font-Amatic-SC">
-                Movie Platform
+                {translations.project1?.title || "Movie Platform"}
               </h3>
               <p className="text-2xl text-[#52efc2] mb-4 font-Amatic-SC font-bold">
                 <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
-                JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.{" "}
+                {translations.project1?.technologies ||
+                  "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express."}{" "}
                 <br />
                 <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
-                Movie catalog and user management.
+                {translations.project1?.features ||
+                  "Movie catalog and user management."}
               </p>
               <a
                 href="https://github.com/Lisandro85/Movies-Plataforma"
@@ -137,7 +161,8 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="text-2xl font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC"
               >
-                See Repository
+                {translations.seeRepository || "See Repository"}{" "}
+                {/* Traducción dinámica */}
               </a>
             </div>
           </div>

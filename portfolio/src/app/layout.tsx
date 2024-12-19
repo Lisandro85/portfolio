@@ -1,6 +1,8 @@
+"use client";
 import Navbar from "@/components/NavBar/navbar";
-import "./globals.css";
 import Footer from "@/components/Footer/footer";
+import { LanguageProvider } from "@/context/LanguageContext";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -10,12 +12,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-custom-bg bg-cover bg-center min-h-screen">
-        <header>
-          <Navbar />
-        </header>
-        <main className="flex-grow">{children}</main>{" "}
-        {/* Esto asegura que el contenido crezca para llenar el espacio */}
-        <Footer />
+        <LanguageProvider>
+          {" "}
+          {/* Envolvemos el contenido con LanguageProvider */}
+          <header>
+            <Navbar />
+          </header>
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

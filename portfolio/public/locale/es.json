@@ -1,0 +1,44 @@
+{
+  "home": {
+    "description": "¡Hola! Soy un desarrollador de software especializado en soluciones web dinámicas, con un enfoque fuerte en tecnologías de backend."
+  },
+  "about": {
+    "description": "Soy un profesional en tecnología y desarrollo de software con una formación única que abarca tanto seguridad e inteligencia criminal como programación. Comencé mi carrera como Analista de Sistemas y Desarrollador de Software, donde adquirí una base sólida en lógica y diseño de sistemas. Más tarde, desarrollé mis habilidades en el campo de la seguridad, especializándome en inteligencia criminal, lo que me dio una perspectiva analítica y un enfoque para resolver problemas complejos. Hoy en día, trabajo como Desarrollador Web Full Stack, con especialización en Backend.",
+    "technologies": "Tengo experiencia en tecnologías como",
+    "final": "Mi enfoque está en desarrollar soluciones eficientes y escalables, aprovechando tanto la lógica de backend como la experiencia del usuario frontend para crear aplicaciones completas y de gran impacto. Estoy motivado para seguir aprendiendo y afrontar nuevos desafíos en el mundo de la tecnología. Siempre estoy abierto a oportunidades que me permitan crecer profesionalmente y contribuir con mis habilidades a proyectos innovadores. Siempre estoy abierto a nuevas oportunidades y colaboraciones."
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
+  },
+  "projects": {
+    "project1": {
+      "title": "Plataforma de Películas",
+      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
+      "features": "Catálogo de películas y gestión de usuarios."
+    },
+    "project2": {
+      "title": "Sistema de Gestion Rest-Bar",
+      "technologies": "TypeScript, PostgreSQL, Express, React.",
+      "features": "Reservas en tiempo real y gestión de clientes."
+    },
+    "project3": {
+      "title": "API de Ecommerce",
+      "technologies": "NestJS, PostgreSQL, TypeScript, TypeORM.",
+      "features": "Gestión de productos, usuarios y pedidos."
+    },
+    "project4": {
+      "title": "Buddify - Red Social",
+      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.",
+      "features": "Crear y unirse a eventos, perfiles de usuario y exploración de actividades."
+    },
+    "seeRepository": "Ver Repositorio"
+  },
+  "navBar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contáctame",
+    "language": "Idioma"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "home": {
+    "description": "Hello! I'm a software developer specializing in dynamic web solutions, with a strong focus on backend technologies."
+  },
+  "about": {
+    "description": "I am a professional in technology and software development with a unique background that encompasses both security and criminal intelligence as well as programming. I began my career as a Systems Analyst and Software Developer, where I gained solid foundations in system logic and design. Later, I developed my skills in the field of security, specializing in criminal intelligence, which gave me an analytical perspective and a problem-solving approach to complex issues. Today, I work as a Full Stack Web Developer, with a specialization in Backend.",
+    "technologies": "I have experience in technologies like",
+    "final": "My focus is on developing efficient and scalable solutions, leveraging both backend logic and frontend user experience to create comprehensive and high-impact applications. I am motivated to continue learning and tackling new challenges in the world of technology. I am always open to opportunities that allow me to grow professionally and contribute my skills to innovative projects. I am always open to new opportunities and collaborations."
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to me via LinkedIn, GitHub, or email. I’m always open to new opportunities and collaborations."
+  },
+
+  "projects": {
+    "project1": {
+      "title": "Movie Platform",
+      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
+      "features": "Movie catalog and user management."
+    },
+    "project2": {
+      "title": "Rest-Bar Scheduling System",
+      "technologies": "TypeScript, PostgreSQL, Express, React.",
+      "features": "Real-time reservations and customer management."
+    },
+    "project3": {
+      "title": "Ecommerce API",
+      "technologies": "NestJS, PostgreSQL, TypeScript, TypeORM.",
+      "features": "Product, user, and order management."
+    },
+    "project4": {
+      "title": "Buddify - Social Network",
+      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.",
+      "features": "Create and join events, user profiles, and activity exploration."
+    },
+    "seeRepository": "See Repository"
+  },
+  "navBar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact Me",
+    "language": "Language"
+  }
+}

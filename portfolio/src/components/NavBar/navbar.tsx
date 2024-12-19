@@ -33,7 +33,6 @@ const Navbar = () => {
     it: "Italiano",
   };
 
-  // Cerrar el menu de idiomas cuando se hace clic fuera
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (

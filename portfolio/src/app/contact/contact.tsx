@@ -4,7 +4,6 @@ import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
-  // Pasa 'contact' como parámetro para obtener las traducciones de la página "Contact"
   const translations = useTranslations("contact");
 
   return (

@@ -3,7 +3,6 @@
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 
 export default function AboutMe() {
-  // Pasa 'about' como parámetro para obtener las traducciones de la página "About Me"
   const translations = useTranslations("about");
 
   return (
@@ -18,7 +17,7 @@ export default function AboutMe() {
           {/* Tecnologías con hover y escala */}
           <span className="block mt-2">
             {translations?.technologies ||
-              "I have experience in technologies such as "}
+              "I have experience in technologies such as  "}
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
               Node.js,
             </span>{" "}

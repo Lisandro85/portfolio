@@ -1,13 +1,12 @@
-"use client"; // Agrega esta línea para indicar que este componente se ejecuta en el cliente
+"use client";
 
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 
 export default function Projects() {
   const translations = useTranslations("projects");
 
-  // Verificar si las traducciones no están disponibles
   if (!translations) {
-    return <div>Loading...</div>; // Puedes mostrar un mensaje de carga mientras esperas las traducciones
+    return <div>Loading...</div>;
   }
 
   return (

@@ -5,11 +5,11 @@ import DownloadItaCVButton from "@/components/DownLoadItalianCv/downLoadItaCv";
 import Image from "next/image";
 import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
-import { useLanguage } from "@/context/LanguageContext"; // Asegúrate de importar el contexto
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
   const translations = useTranslations("home");
-  const { locale } = useLanguage(); // Obtener el idioma actual desde el contexto
+  const { locale } = useLanguage();
 
   return (
     <div className="flex items-center justify-center mt-10 mb-80 px-4">

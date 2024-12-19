@@ -73,19 +73,19 @@ const Navbar = () => {
               <div className="absolute right-0 bg-[rgba(0,0,0,0.7)]  text-[#06d6a0] p-2 mt-2 rounded-md shadow-lg z-50">
                 <button
                   onClick={() => handleLanguageChange("en")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white"
+                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white text-xl font-bold font-Amatic-SC"
                 >
                   {languageNames.en}
                 </button>
                 <button
                   onClick={() => handleLanguageChange("es")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white"
+                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold  text-xl font-Amatic-SC"
                 >
                   {languageNames.es}
                 </button>
                 <button
                   onClick={() => handleLanguageChange("it")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white"
+                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold  text-xl font-Amatic-SC"
                 >
                   {languageNames.it}
                 </button>

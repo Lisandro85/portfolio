@@ -59,7 +59,6 @@ export default function AboutMe() {
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
               React
             </span>
-            .
           </p>
         </div>
 

@@ -7,6 +7,7 @@ import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import { useLanguage } from "@/context/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
+import Avatar from "@/components/Avatar/avatar";
 
 export default function Home() {
   const translations = useTranslations("home");
@@ -31,13 +32,18 @@ export default function Home() {
           <div className="text-center md:text-left flex-1 min-w-[300px]">
             <h2 className="text-5xl sm:text-5xl md:text-8xl font-bold text-[#06d6a0] font-Amatic-SC">
               <TypeAnimation
-                sequence={["Lisandro Bedotti", 1000, "Backend Developer", 1000]}
+                sequence={[
+                  "Lisandro Bedotti...",
+                  1000,
+                  "...Backend Developer",
+                  1000,
+                ]}
                 wrapper="span"
                 repeat={Infinity}
-                className="font bold text-[#06d6a0] font-Amatic-SC text-5xl md:text-7xl"
+                className="font bold text-primary font-Amatic-SC text-5xl md:text-7xl"
               />
             </h2>
-            <p className="text-3xl sm:text-4xl md:text-5xl mt-2 text-[#06d6a0] font-Amatic-SC leading-snug sm:leading-snug md:leading-snug">
+            <p className="text-3xl sm:text-4xl md:text-5xl mt-2 text-primary font-Amatic-SC leading-snug sm:leading-snug md:leading-snug">
               {translations.description ||
                 "Hello! I'm a software developer of dynamic web solutions, with a strong focus on backend technologies."}
             </p>

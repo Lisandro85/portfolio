@@ -1,5 +1,6 @@
 "use client";
 
+import Avatar from "@/components/Avatar/avatar";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 
 export default function Projects() {

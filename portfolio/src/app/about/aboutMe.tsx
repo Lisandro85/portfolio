@@ -23,7 +23,7 @@ export default function AboutMe() {
           </div>
 
           {/* El texto continúa alrededor de la imagen sin superponerse */}
-          <p className="mt-10 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words md:ml-10 sm:text-center md:text-justify">
+          <p className=" sm:mb-2 mt-10 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words md:ml-10 sm:text-center md:text-justify">
             {translations?.technologies ||
               "I have experience in technologies such as  "}
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
@@ -57,13 +57,13 @@ export default function AboutMe() {
               Docker,
             </span>{" "}
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
-              React
+              React.
             </span>
           </p>
         </div>
 
         {/* Texto final con justificación o centrado */}
-        <p className="mt-14 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words sm:text-center md:text-justify">
+        <p className="mt-2 sm:mt-10 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words sm:text-center md:text-justify">
           {translations?.final ||
             "My focus is on developing efficient and scalable solutions, leveraging both backend logic and frontend user experience to create comprehensive and high-impact applications."}
         </p>

@@ -7,7 +7,6 @@ import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import { useLanguage } from "@/context/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
-import Avatar from "@/components/Avatar/avatar";
 
 export default function Home() {
   const translations = useTranslations("home");

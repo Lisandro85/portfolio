@@ -3,6 +3,7 @@ import Navbar from "@/components/NavBar/navbar";
 import Footer from "@/components/Footer/footer";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
+import CoverParticles from "@/components/Cover-particles/coverParticles";
 
 export default function RootLayout({
   children,
@@ -18,7 +19,10 @@ export default function RootLayout({
           <header>
             <Navbar />
           </header>
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow">
+            <CoverParticles />
+            {children}
+          </main>
           <Footer />
         </LanguageProvider>
       </body>

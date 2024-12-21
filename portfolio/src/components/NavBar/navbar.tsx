@@ -54,12 +54,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo o Título */}
         <div className="flex items-center space-x-4">
-          <div className="text-[#06d6a0] text-4xl font-bold font-Amatic-SC">
-            <Link href="/" className="text-[#06d6a0] text-4xl font-Amatic-SC">
-              Backend dev &lt;&gt;
-            </Link>
-          </div>
-
           {/* Dropdown de idioma */}
           <div className="relative" ref={langMenuRef}>
             <button

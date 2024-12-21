@@ -63,6 +63,7 @@ export default function AboutMe() {
           </p>
         </div>
 
+        {/* Texto final con justificación o centrado */}
         <p className="mt-14 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words sm:text-center md:text-justify">
           {translations?.final ||
             "My focus is on developing efficient and scalable solutions, leveraging both backend logic and frontend user experience to create comprehensive and high-impact applications."}

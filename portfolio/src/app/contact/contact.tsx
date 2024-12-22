@@ -7,7 +7,7 @@ export default function Contact() {
   const translations = useTranslations("contact");
 
   return (
-    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md mt-10 py-10 px-4 mb-96">
+    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md py-10 px-4 mb-96 mt-20">
       {/* Título */}
       <h1 className="text-8xl sm:text-6xl md:text-7xl font-bold text-[#06d6a0] font-Amatic-SC text-center">
         {translations?.title || "Contact Me"}

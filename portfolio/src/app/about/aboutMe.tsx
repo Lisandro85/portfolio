@@ -7,7 +7,7 @@ export default function AboutMe() {
   const translations = useTranslations("about");
 
   return (
-    <div className="mx-5 bg-[rgba(0,109,119,0.8)] mt-10 rounded-lg shadow-md overflow-hidden mb-80 px-4 py-4">
+    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md overflow-hidden mb-80 px-4 py-4 mt-20">
       {/* Contenedor con margen a los lados */}
       <div className="max-w-4xl mx-auto text-left px-4">
         {/* Agregado px-4 para el margen lateral en pantallas grandes */}

@@ -1,38 +1,33 @@
 "use client";
 import Link from "next/link";
+import { itemsNavbar } from "../../../data";
 import { usePathname } from "next/navigation";
-import { useState, useEffect, useRef } from "react";
-import { useLanguage } from "@/context/LanguageContext";
-import useTranslations from "../HoockTraslate/hookTraslate";
+import { useState, useRef, useEffect } from "react";
+import { useLanguage } from "@/context/LanguageContext"; // Asegúrate de importar el contexto de idioma
+import useTranslations from "../HoockTraslate/hookTraslate"; // Asegúrate de importar las traducciones
+import { Globe } from "lucide-react"; // Importa el ícono Globe de lucide-react
 
 const Navbar = () => {
-  const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
+  const router = usePathname();
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
   const translations = useTranslations("navBar");
-
   const { locale, setLocale } = useLanguage();
 
-  const isActive = (path: string) => pathname.startsWith(path);
-
-  const handleLinkClick = () => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
-  };
-
+  // Función para manejar el cambio de idioma
   const handleLanguageChange = (language: "en" | "es" | "it") => {
     setLocale(language);
     setIsLangMenuOpen(false);
   };
 
+  // Nombres de los idiomas
   const languageNames: { [key in "en" | "es" | "it"]: string } = {
     en: "English",
     es: "Español",
     it: "Italiano",
   };
 
+  // Detectar clic fuera del menú de idioma para cerrarlo
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -50,126 +45,59 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-[rgba(0,109,119,0.8)] p-2 z-20">
-      <div className="max-w-7xl mx-auto flex justify-between items-center ">
-        {/* Logo o Título */}
-        <div className=" ml-2 flex items-center space-x-4">
-          {/* Dropdown de idioma */}
-          <div className="relative" ref={langMenuRef}>
-            <button
-              className="text-[#06d6a0] text-2xl sm:text-3xl font-bold font-Amatic-SC"
-              onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+    <div className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max top-3 mb-10">
+      <nav>
+        <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-bgConteiner backdrop-blur-sm">
+          {/* Enlaces de navegación */}
+          {itemsNavbar.map((item) => (
+            <div
+              key={item.id}
+              className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${
+                router === item.link && "bg-secondary"
+              }`}
             >
-              {languageNames[locale as "en" | "es" | "it"]}{" "}
-              <span className="text-3xl">🌍</span>
-            </button>
-            {isLangMenuOpen && (
-              <div className="absolute right-0 bg-[rgba(0,0,0,0.7)]  text-[#06d6a0] p-2 mt-2 rounded-md shadow-lg z-50">
-                <button
-                  onClick={() => handleLanguageChange("en")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white text-xl font-bold font-Amatic-SC"
-                >
-                  {languageNames.en}
-                </button>
-                <button
-                  onClick={() => handleLanguageChange("es")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold  text-xl font-Amatic-SC"
-                >
-                  {languageNames.es}
-                </button>
-                <button
-                  onClick={() => handleLanguageChange("it")}
-                  className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold  text-xl font-Amatic-SC"
-                >
-                  {languageNames.it}
-                </button>
-              </div>
-            )}
-          </div>
+              <Link href={item.link}>{item.icon}</Link>
+            </div>
+          ))}
         </div>
+      </nav>
 
-        {/* Botón hamburguesa */}
-        <button
-          className="sm:hidden text-[#52b69a] focus:outline-none relative z-50"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? (
-            <span className="absolute top-0 right-0 text-[#06d6a0] text-4xl font-bold z-50 cursor-pointer">
-              x
-            </span>
-          ) : (
-            <>
-              <span
-                className={`block w-6 h-0.5 bg-[#06d6a0] my-1 transition-transform ${
-                  isOpen ? "rotate-45 translate-y-2" : ""
-                }`}
-              ></span>
-              <span
-                className={`block w-6 h-0.5 bg-[#06d6a0] my-1 transition-opacity ${
-                  isOpen ? "opacity-0" : "opacity-100"
-                }`}
-              ></span>
-              <span
-                className={`block w-6 h-0.5 bg-[#06d6a0] my-1 transition-transform ${
-                  isOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
-              ></span>
-            </>
+      {/* Menú de idiomas al final de la navbar */}
+      <div className="absolute right-4 top-1 mt-0 sm:right-3 sm:top-1">
+        {/* Ajuste de alineación con el top de la navbar */}
+        <div className="relative" ref={langMenuRef}>
+          <button
+            className="text-[#06d6a0] text-2xl sm:text-3xl font-bold font-Amatic-SC p-2 rounded-full bg-[#006d77cc] hover:bg-[#006d77cc] transition-colors"
+            onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+          >
+            <Globe size={25} color="#06d6a0" />{" "}
+            {/* Ícono de Lucide React con tamaño y color */}
+          </button>
+          {isLangMenuOpen && (
+            <div className="absolute right-0 bg-[rgba(0,0,0,0.7)] text-[#06d6a0] p-2 mt-2 rounded-md shadow-lg z-50">
+              <button
+                onClick={() => handleLanguageChange("en")}
+                className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white text-xl font-bold font-Amatic-SC"
+              >
+                {languageNames.en}
+              </button>
+              <button
+                onClick={() => handleLanguageChange("es")}
+                className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold text-xl font-Amatic-SC"
+              >
+                {languageNames.es}
+              </button>
+              <button
+                onClick={() => handleLanguageChange("it")}
+                className="block py-2 px-4 hover:bg-[#06d6a0] hover:text-white font-bold text-xl font-Amatic-SC"
+              >
+                {languageNames.it}
+              </button>
+            </div>
           )}
-        </button>
-
-        {/* Enlaces de navegación */}
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } sm:flex sm:space-x-4 text-center fixed inset-0 bg-[rgba(0,0,0,0.7)] sm:bg-transparent sm:relative sm:flex sm:space-x-6 sm:block sm:space-y-0 space-y-4 sm:space-y-0 pt-16 sm:pt-0 sm:static px-4 sm:px-0 z-40`}
-        >
-          <Link
-            href="/home"
-            onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#06d6a0] text-6xl sm:text-2xl md:text-3xl lg:text-3xl font-bold font-Amatic-SC ${
-              isActive("/home") ? "text-[#06d6a0] text-glow" : "hover:text-glow"
-            }`}
-          >
-            {translations.home}
-          </Link>
-          <Link
-            href="/about"
-            onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#06d6a0] text-6xl sm:text-2xl md:text-3xl lg:text-3xl font-bold font-Amatic-SC ${
-              isActive("/about")
-                ? "text-[#06d6a0] text-glow"
-                : "hover:text-glow"
-            }`}
-          >
-            {translations.about}
-          </Link>
-          <Link
-            href="/projects"
-            onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#06d6a0] text-6xl sm:text-2xl md:text-3xl lg:text-3xl font-bold font-Amatic-SC ${
-              isActive("/projects")
-                ? "text-[#06d6a0] text-glow"
-                : "hover:text-glow"
-            }`}
-          >
-            {translations.projects}
-          </Link>
-          <Link
-            href="/contact"
-            onClick={handleLinkClick}
-            className={`block sm:inline-block text-[#06d6a0] text-6xl sm:text-2xl md:text-3xl lg:text-3xl font-bold font-Amatic-SC  ${
-              isActive("/contact")
-                ? "text-[#06d6a0] text-glow"
-                : "hover:text-glow"
-            }`}
-          >
-            {translations.contact}
-          </Link>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

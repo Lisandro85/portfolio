@@ -51,9 +51,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[rgba(0,109,119,0.8)] p-2 z-20">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center ">
         {/* Logo o Título */}
-        <div className="flex items-center space-x-4">
+        <div className=" ml-2 flex items-center space-x-4">
           {/* Dropdown de idioma */}
           <div className="relative" ref={langMenuRef}>
             <button

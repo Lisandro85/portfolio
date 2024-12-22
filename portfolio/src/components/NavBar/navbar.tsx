@@ -71,7 +71,7 @@ const Navbar = () => {
             className="text-[#06d6a0] text-2xl sm:text-3xl font-bold font-Amatic-SC p-2 rounded-full bg-[#006d77cc] hover:bg-[#006d77cc] transition-colors"
             onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
           >
-            <Globe size={25} color="##06d6a0" />{" "}
+            <Globe size={25} color="#06d6a0" />{" "}
             {/* Ícono de Lucide React con tamaño y color */}
           </button>
           {isLangMenuOpen && (

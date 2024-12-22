@@ -1,5 +1,4 @@
 import Navbar from "@/components/NavBar/navbar";
-import Footer from "@/components/Footer/footer";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 import CoverParticles from "@/components/Cover-particles/coverParticles";

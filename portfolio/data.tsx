@@ -60,7 +60,7 @@ export const itemsNavbar = [
   {
     id: 3,
     title: "Projects",
-    icon: <BookText size={25} color="#06d6a0" strokeWidth={1} />,
+    icon: <CodeSquare size={25} color="#06d6a0" strokeWidth={1} />,
     link: "/projects",
   },
   {

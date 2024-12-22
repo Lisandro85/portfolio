@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext"; // Asegúrate de importar el contexto de idioma
 import useTranslations from "../HoockTraslate/hookTraslate"; // Asegúrate de importar las traducciones
 import { Globe } from "lucide-react"; // Importa el ícono Globe de lucide-react
+import MotionTransition from "../Transition-components/transition-components";
 
 const Navbar = () => {
   const router = usePathname();
@@ -46,7 +47,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max top-3 mb-10">
+    <MotionTransition
+      position="right"
+      className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max top-3 mb-10"
+    >
       <nav>
         <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-bgConteiner backdrop-blur-sm">
           {/* Enlaces de navegación */}
@@ -98,7 +102,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </div>
+    </MotionTransition>
   );
 };
 

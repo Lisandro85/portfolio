@@ -3,8 +3,8 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 import CoverParticles from "@/components/Cover-particles/coverParticles";
 import { Metadata } from "next";
-import { TransitionPage } from "@/components/Transition Page/transitionPage";
 import { AnimatePresence } from "framer-motion";
+import Footer from "@/components/Footer/footer";
 
 export const metadata: Metadata = {
   title: "Lisandro Bedotti 💻",
@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-custom-bg bg-cover bg-center min-h-screen">
         <LanguageProvider>
-          <TransitionPage />
           <header>
             <Navbar />
           </header>
@@ -31,6 +30,7 @@ export default function RootLayout({
             </main>
           </AnimatePresence>
         </LanguageProvider>
+        <Footer />
       </body>
     </html>
   );

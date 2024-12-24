@@ -7,23 +7,18 @@ import {
   useEffect,
 } from "react";
 
-// Definir los tipos para nuestro contexto
 interface LanguageContextType {
   locale: string;
   setLocale: (locale: string) => void;
 }
 
-// Crear el contexto
 const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-// Componente proveedor que envuelve tu aplicación
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  // Estado para el idioma
   const [locale, setLocale] = useState("en");
 
-  // Cargar el idioma guardado (si existe) desde localStorage
   useEffect(() => {
     const savedLocale = localStorage.getItem("locale");
     if (savedLocale) {
@@ -31,10 +26,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
   }, []);
 
-  // Cambiar el idioma y guardarlo en localStorage
   const changeLocale = (newLocale: string) => {
     setLocale(newLocale);
-    localStorage.setItem("locale", newLocale); // Guardar el idioma en localStorage
+    localStorage.setItem("locale", newLocale);
   };
 
   return (
@@ -44,7 +38,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Custom Hook para usar el contexto en otros componentes
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {

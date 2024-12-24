@@ -34,7 +34,7 @@ export default function Home() {
                 sequence={[
                   "Lisandro Bedotti...",
                   1000,
-                  "...Backend Developer",
+                  "... Web Developer.",
                   1000,
                 ]}
                 wrapper="span"

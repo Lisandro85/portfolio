@@ -1,50 +1,53 @@
 "use client";
+import { DownloadCVButtonProps } from "../interfaces/interfaces";
+
 import React from "react";
 import Flag from "react-world-flags";
 import Swal from "sweetalert2";
 
-const DownloadEspCVButton: React.FC = () => {
+const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
+  flagCode,
+  cvLink,
+  translations,
+  buttonText,
+}) => {
   const handleDownload = (e: React.MouseEvent) => {
     e.preventDefault();
 
     Swal.fire({
-      title: "Estás seguro?",
-      html: `<p class="font-Amatic-SC">¿Quieres descargar el CV en Español?</p>`,
+      title: translations.title,
+      html: `<p class="font-Amatic-SC">${translations.message}</p>`,
       color: "#06d6a0",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: "Si, descargar",
-      cancelButtonText: "Cancelar",
+      confirmButtonText: translations.confirm,
+      cancelButtonText: translations.cancel,
       customClass: {
         confirmButton: "bg-[#52b69a] text-white text-xl py-1 px-3 rounded",
         cancelButton: "bg-[#d9534f] text-white text-xl py-1 px-3 rounded",
         popup:
-          " text-2xl bg-slate-800 bg-opacity-80 text-white font-Amatic-SC max-w-md",
+          "text-2xl bg-slate-800 bg-opacity-80 text-white font-Amatic-SC max-w-md",
         title: "text-3xl font-Amatic-SC",
       },
     }).then((result) => {
       if (result.isConfirmed) {
         const link = document.createElement("a");
-        link.href = "/CVLisandroBedottiEsp.pdf";
-        link.download = "CVLisandroBedottiEsp.pdf";
+        link.href = cvLink;
+        link.download = cvLink.split("/").pop() || "";
         link.click();
       }
     });
   };
 
   return (
-    <a
-      href="/CVLisandroBedottiEsp.pdf"
-      download="CVLisandroBedottiEsp.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
       onClick={handleDownload}
       className="bg-[#52b69a] text-emerald-900 py-1 px-4 sm:py-1 sm:px-4 text-lg sm:text-base md:text-lg font-bold font-Amatic-SC rounded-md hover:bg-[#76c893] transition duration-300 text-center inline-flex items-center justify-center mb-5"
     >
-      <Flag code="ES" width={30} height={20} className="mr-2" />
-      Descargar CV
-    </a>
+      <Flag code={flagCode} width={30} height={20} className="mr-2" />
+      {buttonText}
+    </button>
   );
 };
 
-export default DownloadEspCVButton;
+export default DownloadCVButton;

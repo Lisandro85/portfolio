@@ -1,12 +1,10 @@
 "use client";
 
-import DownloadCVButton from "@/components/DownLoadSpanishCv/downLoadEspCv";
-import DownloadItaCVButton from "@/components/DownLoadItalianCv/downLoadItaCv";
 import Image from "next/image";
-import DownloadEngCVButton from "@/components/DownLoadEngCv/downLoadEngCv";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import { useLanguage } from "@/context/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
+import DownloadCVButton from "@/components/DownloadCvButton/dowLoadCvButton";
 
 export default function Home() {
   const translations = useTranslations("home");
@@ -49,9 +47,45 @@ export default function Home() {
 
             {/* Botones de descarga */}
             <div className="mt-4 flex flex-col md:flex-row justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4">
-              {locale === "es" && <DownloadCVButton />}
-              {locale === "it" && <DownloadItaCVButton />}
-              {locale === "en" && <DownloadEngCVButton />}
+              {locale === "es" && (
+                <DownloadCVButton
+                  flagCode="ES"
+                  cvLink="/CVLisandroBedottiEsp.pdf"
+                  buttonText="Descargar CV"
+                  translations={{
+                    title: "¿Estás seguro?",
+                    message: "¿Quieres descargar el CV en Español?",
+                    confirm: "Sí, descargar",
+                    cancel: "Cancelar",
+                  }}
+                />
+              )}
+              {locale === "it" && (
+                <DownloadCVButton
+                  flagCode="IT"
+                  cvLink="/CVLisandroBedottiIta.pdf"
+                  buttonText="Scarica CV"
+                  translations={{
+                    title: "Sei sicuro?",
+                    message: "Vuoi scaricare il CV in Italiano?",
+                    confirm: "Sì, scarica",
+                    cancel: "Annulla",
+                  }}
+                />
+              )}
+              {locale === "en" && (
+                <DownloadCVButton
+                  flagCode="GB"
+                  cvLink="/CVLisandroBedottiEng.pdf"
+                  buttonText="Download CV"
+                  translations={{
+                    title: "Are you sure?",
+                    message: "Do you want to download the English CV?",
+                    confirm: "Yes, download",
+                    cancel: "Cancel",
+                  }}
+                />
+              )}
             </div>
           </div>
         </div>

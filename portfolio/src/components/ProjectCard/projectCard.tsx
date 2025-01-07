@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <img
           src={imageUrl}
           alt="Video Preview"
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover rounded-lg"
         />
       </a>
       <div className="p-4">

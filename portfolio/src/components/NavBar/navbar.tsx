@@ -4,9 +4,9 @@ import Link from "next/link";
 import { itemsNavbar } from "../../../data";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
-import { useLanguage } from "@/context/LanguageContext"; // Asegúrate de importar el contexto de idioma
-import useTranslations from "../HoockTraslate/hookTraslate"; // Asegúrate de importar las traducciones
-import { Globe } from "lucide-react"; // Importa el ícono Globe de lucide-react
+import { useLanguage } from "@/context/LanguageContext";
+import useTranslations from "../HoockTraslate/hookTraslate";
+import { Globe } from "lucide-react";
 import MotionTransition from "../Transition-components/transition-components";
 
 const Navbar = () => {

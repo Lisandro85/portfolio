@@ -17,13 +17,8 @@ export default function AboutMe() {
         </p>
 
         <div className=" flex flex-col md:flex-row items-start justify-start pr-4 gap-2">
-          {/* Imagen flotante en pantallas grandes y centrada en pantallas pequeñas */}
-          <div className="relative w-32 h-32 rounded-full mb-4 md:mb-0 md:float-left mr-8 mt-8 sm:mt-4 md:-mt-10">
-            <Avatar />
-          </div>
-
-          {/* El texto continúa alrededor de la imagen sin superponerse */}
-          <p className="pl-4 sm:mb-2 mt-10 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words md:ml-10 text-center sm:text-center md:text-center">
+          <Avatar />
+          <p className="sm:mt-10 sm:mb-2 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words md:ml-10 text-center sm:text-center md:text-center">
             {translations?.technologies ||
               "I have experience in technologies such as  "}
             <span className="text-[#83c5be] inline-block transform transition-all duration-300 hover:scale-110">
@@ -63,7 +58,7 @@ export default function AboutMe() {
         </div>
 
         {/* Texto final con justificación o centrado */}
-        <p className="mt-2 sm:mt-10 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words  text-center sm:text-center md:text-center">
+        <p className=" mt-2 sm:mt-2 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words  text-center sm:text-center md:text-center">
           {translations?.final ||
             "My focus is on developing efficient and scalable solutions, leveraging both backend logic and frontend user experience to create comprehensive and high-impact applications."}
         </p>

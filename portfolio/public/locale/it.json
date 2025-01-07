@@ -43,7 +43,7 @@
       "repositoryUrl": "https://github.com/Lisandro85/Movies-Plataforma",
       "title": "Piattaforma di Film",
       "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
-      "features": "Catalogo di film e gestione degli utenti."
+      "features": "Catalogo di film"
     },
     "seeRepository": "Vedi il Repositorio"
   },

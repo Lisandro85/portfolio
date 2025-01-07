@@ -9,3 +9,18 @@ export interface DownloadCVButtonProps {
   };
   buttonText: string;
 }
+
+export interface ProjectCardProps {
+  videoUrl: string;
+  imageUrl: string;
+  title: string;
+  technologies: string;
+  features: string;
+  repositoryUrl: string;
+  translations: {
+    title?: string;
+    technologies?: string;
+    features?: string;
+    seeRepository?: string;
+  };
+}

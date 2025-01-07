@@ -12,25 +12,39 @@
     "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
   },
   "projects": {
-    "project1": {
-      "title": "Plataforma de Películas",
-      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
-      "features": "Catálogo de películas y gestión de usuarios."
-    },
-    "project2": {
-      "title": "Sistema de Gestion Rest-Bar",
-      "technologies": "TypeScript, PostgreSQL, Express, React.",
-      "features": "Reservas en tiempo real y gestión de clientes."
+    "project4": {
+      "videoUrl": "https://www.youtube.com/watch?v=igOPSYdE_Xc",
+      "imageUrl": "https://img.youtube.com/vi/igOPSYdE_Xc/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/Buddify",
+      "title": "Buddify - Red Social",
+      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.",
+      "features": "Crear y unirse a eventos, perfiles de usuario y exploración de actividades."
     },
     "project3": {
+      "videoUrl": "https://www.youtube.com/watch?v=IwXr4UKzs64",
+      "imageUrl": "https://img.youtube.com/vi/IwXr4UKzs64/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/ecommerceDeploy",
       "title": "API de Ecommerce",
       "technologies": "NestJS, PostgreSQL, TypeScript, TypeORM.",
       "features": "Gestión de productos, usuarios y pedidos."
     },
-    "project4": {
-      "title": "Buddify - Red Social",
-      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.",
-      "features": "Crear y unirse a eventos, perfiles de usuario y exploración de actividades."
+
+    "project2": {
+      "videoUrl": "https://www.youtube.com/watch?v=VizIYWYvxLQ",
+      "imageUrl": "https://img.youtube.com/vi/VizIYWYvxLQ/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/sistema-de-turnos-resto-bar",
+      "title": "Sistema de Gestion Rest-Bar",
+      "technologies": "TypeScript, PostgreSQL, Express, React.",
+      "features": "Reservas en tiempo real y gestión de clientes."
+    },
+
+    "project1": {
+      "videoUrl": "https://www.youtube.com/watch?v=ZJ-Y7EWapTo",
+      "imageUrl": "https://img.youtube.com/vi/ZJ-Y7EWapTo/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/Movies-Plataforma",
+      "title": "Plataforma de Películas",
+      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
+      "features": "Catálogo de películas y gestión de usuarios."
     },
     "seeRepository": "Ver Repositorio"
   },

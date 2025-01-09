@@ -14,12 +14,28 @@
   },
 
   "projects": {
+    "project6": {
+      "videoUrl": "https://youtu.be/NYcmwtTBYwM",
+      "imageUrl": "https://img.youtube.com/vi/NYcmwtTBYwM/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/guitarla",
+      "title": "Guitar LA",
+      "technologies": "React, javaScript, CSS, Bootstrap",
+      "features": "An interactive guitar shopping cart"
+    },
+    "project5": {
+      "videoUrl": "https://youtu.be/t054EaewozU",
+      "imageUrl": "https://img.youtube.com/vi/t054EaewozU/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/TA-TE-TI",
+      "title": "TA-TE-TI Game",
+      "technologies": "React, javaScript, CSS",
+      "features": "The well-known and typical game Tic-Tac-Toe, to be played between two people"
+    },
     "project4": {
       "videoUrl": "https://www.youtube.com/watch?v=igOPSYdE_Xc",
       "imageUrl": "https://img.youtube.com/vi/igOPSYdE_Xc/0.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/Buddify",
       "title": "Buddify - Social Network",
-      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS.",
+      "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, Tailwind CSS, React",
       "features": "Create and join events, user profiles, and activity exploration."
     },
     "project3": {

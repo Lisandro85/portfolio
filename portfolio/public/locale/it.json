@@ -12,6 +12,22 @@
     "description": "Sentiti libero di contattarmi tramite LinkedIn, GitHub o email. Sono sempre aperto a nuove opportunità e collaborazioni."
   },
   "projects": {
+    "project6": {
+      "videoUrl": "https://youtu.be/NYcmwtTBYwM",
+      "imageUrl": "https://img.youtube.com/vi/NYcmwtTBYwM/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/guitarla",
+      "title": "Guitar LA",
+      "technologies": "React, javaScript, CSS, Bootstrap",
+      "features": "Un carrello interattivo per chitarre"
+    },
+    "project5": {
+      "videoUrl": "https://youtu.be/t054EaewozU",
+      "imageUrl": "https://img.youtube.com/vi/t054EaewozU/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/TA-TE-TI",
+      "title": " Gioco Tris",
+      "technologies": "React, javaScript, CSS",
+      "features": " Il noto e tipico gioco Tris, da giocare tra due persone."
+    },
     "project4": {
       "videoUrl": "https://www.youtube.com/watch?v=igOPSYdE_Xc",
       "imageUrl": "https://img.youtube.com/vi/igOPSYdE_Xc/0.jpg",

@@ -12,6 +12,14 @@
     "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
   },
   "projects": {
+    "project7": {
+      "videoUrl": "https://youtu.be/m0TCg7pCfCw",
+      "imageUrl": "https://img.youtube.com/vi/m0TCg7pCfCw/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/calculadora-de-propinas",
+      "title": "Calculadora de Propinas y Consumo",
+      "technologies": "React, TypeScript, TailwindCSS",
+      "features": "Calcula automáticamente el total de la cuenta, incluyendo el porcentaje de propina."
+    },
     "project6": {
       "videoUrl": "https://youtu.be/NYcmwtTBYwM",
       "imageUrl": "https://img.youtube.com/vi/NYcmwtTBYwM/0.jpg",

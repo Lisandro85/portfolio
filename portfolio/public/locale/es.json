@@ -12,6 +12,14 @@
     "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
   },
   "projects": {
+    "project8": {
+      "videoUrl": "https://youtu.be/UC9PfVwOfTg",
+      "imageUrl": "https://img.youtube.com/vi/UC9PfVwOfTg/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/calorie-tracker",
+      "title": "Contador de  Calorias",
+      "technologies": "React, TypeScript, TailwindCSS",
+      "features": "Contador del consumo y gasto calorico diario"
+    },
     "project7": {
       "videoUrl": "https://youtu.be/m0TCg7pCfCw",
       "imageUrl": "https://img.youtube.com/vi/m0TCg7pCfCw/0.jpg",

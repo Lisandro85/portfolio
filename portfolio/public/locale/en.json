@@ -14,6 +14,14 @@
   },
 
   "projects": {
+    "project8": {
+      "videoUrl": "https://youtu.be/UC9PfVwOfTg",
+      "imageUrl": "https://img.youtube.com/vi/UC9PfVwOfTg/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/calorie-tracker",
+      "title": "Calorie Tracker",
+      "technologies": "React, TypeScript, TailwindCSS",
+      "features": "Daily caloric intake and expenditure tracker"
+    },
     "project7": {
       "videoUrl": "https://youtu.be/m0TCg7pCfCw",
       "imageUrl": "https://img.youtube.com/vi/m0TCg7pCfCw/0.jpg",

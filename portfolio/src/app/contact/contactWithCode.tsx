@@ -4,7 +4,7 @@ import ContactMethod from "./contactMethod";
 export default function contactWithCode() {
   return (
     <>
-      <div className="flex items-center justify-center w-full h-screen px-4 sm:px-6 lg:px-10 mt-10">
+      <div className="flex items-center justify-center w-full h-screen px-4 mt-4 sm:mt-6 lg:mt-10">
         <div className="w-full max-w-xl bg-[rgba(0,0,0,0.8)] p-5 rounded-lg shadow-xl">
           <p>
             <span className="text-violet-500">if {""}</span>

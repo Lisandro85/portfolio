@@ -32,10 +32,10 @@ export default function ContactMethod({
         </a>
       </div>
       <p className="text-blue-400 ml-12 sm:ml-16 md:ml-20 lg:ml-24">
-        text: <span className="text-amber-800">'{text}'</span>
+        text: <span className="text-amber-800">{text}</span>
       </p>
       <p className="text-blue-400 ml-12 sm:ml-16 md:ml-20 lg:ml-24">
-        link: <span className="text-amber-800">'{link}'</span>
+        link: <span className="text-amber-800">{link}</span>
       </p>
     </>
   );

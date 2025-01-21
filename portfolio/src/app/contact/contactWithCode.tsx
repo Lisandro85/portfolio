@@ -21,18 +21,18 @@ export default function contactWithCode() {
           </p>
           <ContactMethod
             icon={<Linkedin />}
-            text='"Linkedin"'
-            link='"https://www.linkedin.com/in/lisandro-bedotti"'
+            text="Linkedin"
+            link="https://www.linkedin.com/in/lisandro-bedotti"
           />
           <ContactMethod
             icon={<GithubIcon />}
-            text='"Github"'
-            link='"https://github.com/Lisandro85"'
+            text="Github"
+            link="https://github.com/Lisandro85"
           />
           <ContactMethod
             icon={<Mail />}
-            text='"Mail"'
-            link='"mailto:lisandrobedotti@hotmail.com"'
+            text="Mail"
+            link="mailto:lisandrobedotti@hotmail.com"
           />
           <p className="text-gray-400 ml-12 sm:ml-14 md:ml-16 lg:ml-20">
             {"/>"}

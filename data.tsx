@@ -53,3 +53,59 @@ export const itemsNavbar = [
     link: "/contact",
   },
 ];
+
+export const logos = [
+  {
+    id: 1,
+    link: "/images/nodejs.svg",
+  },
+  {
+    id: 2,
+    link: "/images/html.webp",
+  },
+  {
+    id: 3,
+    link: "/images/css.svg",
+  },
+
+  {
+    id: 4,
+    link: "/images/javascript.svg",
+  },
+  {
+    id: 5,
+    link: "/images/typescript.webp",
+  },
+  {
+    id: 6,
+    link: "/images/nextjs.png",
+  },
+  {
+    id: 7,
+    link: "/images/nestjs.png",
+  },
+  {
+    id: 8,
+    link: "/images/postgressql.webp",
+  },
+  {
+    id: 9,
+    link: "/images/mongodb.png",
+  },
+  {
+    id: 10,
+    link: "/images/React.svg.png",
+  },
+  {
+    id: 11,
+    link: "/images/typeorm.png",
+  },
+  {
+    id: 12,
+    link: "/images/docker.webp",
+  },
+  {
+    id: 13,
+    link: "/images/tailwind.png",
+  },
+];

@@ -1,9 +1,7 @@
 "use client";
 
-import CarruselTecnologias from "@/components/Carrusel/carrusel";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import ProjectCard from "@/components/ProjectCard/projectCard";
-import { div } from "framer-motion/client";
 
 export default function Projects() {
   const translations = useTranslations("projects");

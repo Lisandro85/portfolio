@@ -1,5 +1,6 @@
 {
   "home": {
+    "skills": "Tech Skills:",
     "description": "Hello! I'm a software developer specializing in dynamic web solutions, with a strong focus on backend technologies."
   },
   "about": {
@@ -87,5 +88,8 @@
     "projects": "Projects",
     "contact": "Contact Me",
     "language": "Language"
+  },
+  "statistics": {
+    "title": "Top Languages "
   }
 }

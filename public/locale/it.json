@@ -1,5 +1,6 @@
 {
   "home": {
+    "skills": "Competenze Tecnologiche:",
     "description": "Ciao! Sono uno sviluppatore di software specializzato in soluzioni web dinamiche, con un forte focus sulle tecnologie backend."
   },
   "about": {
@@ -85,5 +86,8 @@
     "projects": "Progetti",
     "contact": "Contattami",
     "language": "Lingua"
+  },
+  "statistics": {
+    "title": "Linguaggi Utilizzati"
   }
 }

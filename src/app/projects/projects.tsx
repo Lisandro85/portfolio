@@ -1,5 +1,6 @@
 "use client";
 
+import Estadisticas from "@/components/Estadisticas/Estadisticas";
 import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import ProjectCard from "@/components/ProjectCard/projectCard";
 
@@ -19,7 +20,10 @@ export default function Projects() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-slate-800 bg-transparent mb-80 mt-10">
+      <div className="flex flex-row justify-center items-center">
+        <Estadisticas />
+      </div>
+      <div className="min-h-screen flex flex-col bg-slate-800 bg-transparent mb-80 mt-5">
         <div className="mt-6 flex-grow px-4 py-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             {projects.map((project, index) => (

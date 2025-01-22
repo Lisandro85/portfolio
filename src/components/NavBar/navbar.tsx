@@ -58,7 +58,7 @@ const Navbar = () => {
               }`}
             >
               <Link
-                className="flex flex-col justify-center items-center font-bold text-sm md:text-lg lg:text-xl xl:text-2xl text-[#06d6a0] font-Amatic-SC"
+                className="flex flex-col justify-center items-center font-bold text-lg md:text-lg lg:text-xl xl:text-2xl text-[#06d6a0] font-Amatic-SC"
                 href={item.link}
               >
                 {item.icon}{" "}

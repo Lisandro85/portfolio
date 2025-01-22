@@ -5,7 +5,7 @@ import useTranslations from "@/components/HoockTraslate/hookTraslate";
 import { useLanguage } from "@/context/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
 import DownloadCVButton from "@/components/DownloadCvButton/dowLoadCvButton";
-import CarruselTecnologias from "@/components/Carrusel/carrusel";
+import Carrusel from "@/components/Carrusel/carrusel";
 
 export default function Home() {
   const translations = useTranslations("home");
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <CarruselTecnologias />
+      <Carrusel />
     </>
   );
 }

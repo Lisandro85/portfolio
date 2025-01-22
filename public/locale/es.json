@@ -82,8 +82,8 @@
     "seeRepository": "Ver Repositorio"
   },
   "navBar": {
-    "home": "Inicio",
-    "about": "Sobre mí",
+    "home": "Home",
+    "about": "Sobre Mi",
     "projects": "Proyectos",
     "contact": "Contáctame",
     "language": "Idioma"

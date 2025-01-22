@@ -5,24 +5,22 @@ import { itemsNavbar } from "../../../data";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import useTranslations from "../HoockTraslate/hookTraslate";
 import { Globe } from "lucide-react";
 import MotionTransition from "../Transition-components/transition-components";
+import useTranslations from "../HoockTraslate/hookTraslate";
 
 const Navbar = () => {
   const router = usePathname();
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
-  const translations = useTranslations("navBar");
   const { locale, setLocale } = useLanguage();
+  const translations = useTranslations("navBar");
 
-  // Función para manejar el cambio de idioma
   const handleLanguageChange = (language: "en" | "es" | "it") => {
     setLocale(language);
     setIsLangMenuOpen(false);
   };
 
-  // Nombres de los idiomas
   const languageNames: { [key in "en" | "es" | "it"]: string } = {
     en: "English",
     es: "Español",
@@ -51,31 +49,36 @@ const Navbar = () => {
       className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max top-3 mb-10"
     >
       <nav>
-        <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-bgConteiner backdrop-blur-sm">
-          {/* Enlaces de navegación */}
+        <div className="flex items-center justify-center gap-3 md:gap-4 lg:gap-6 px-4 py-1 rounded-full bg-bgConteiner backdrop-blur-sm flex-wrap">
           {itemsNavbar.map((item) => (
             <div
               key={item.id}
-              className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${
+              className={`px-2 py-1 md:px-3 md:py-2 lg:px-4 lg:py-3 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${
                 router === item.link && "bg-secondary"
               }`}
             >
-              <Link href={item.link}>{item.icon}</Link>
+              <Link
+                className="flex flex-col justify-center items-center font-bold text-sm md:text-lg lg:text-xl xl:text-2xl text-[#06d6a0] font-Amatic-SC"
+                href={item.link}
+              >
+                {item.icon}{" "}
+                <span className="text-xs md:text-sm lg:text-base xl:text-lg truncate max-w-[150px] sm:max-w-full">
+                  {translations[item.titleKey] || item.titleKey}
+                </span>
+              </Link>
             </div>
           ))}
         </div>
       </nav>
 
       {/* Menú de idiomas al final de la navbar */}
-      <div className="absolute right-4 top-1 mt-0 sm:right-3 sm:top-1">
-        {/* Ajuste de alineación con el top de la navbar */}
+      <div className="absolute right-4 top-1 mt-0 sm:right-3 sm:top-1 ">
         <div className="relative" ref={langMenuRef}>
           <button
             className="text-[#06d6a0] text-2xl sm:text-3xl font-bold font-Amatic-SC p-2 rounded-full bg-[#006d77cc] hover:bg-[#006d77cc] transition-colors"
             onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
           >
             <Globe size={25} color="#06d6a0" />{" "}
-            {/* Ícono de Lucide React con tamaño y color */}
           </button>
           {isLangMenuOpen && (
             <div className="absolute right-0 bg-[rgba(0,0,0,0.7)] text-[#06d6a0] p-2 mt-2 rounded-md shadow-lg z-50">

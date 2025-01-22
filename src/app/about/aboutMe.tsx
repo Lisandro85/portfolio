@@ -7,10 +7,8 @@ export default function AboutMe() {
   const translations = useTranslations("about");
 
   return (
-    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md overflow-hidden mb-80 px-4 py-4 mt-20">
-      {/* Contenedor con margen a los lados */}
+    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md  mb-80 px-4 py-4 mt-28">
       <div className="max-w-4xl mx-auto text-left px-4">
-        {/* Agregado px-4 para el margen lateral en pantallas grandes */}
         <p className="text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words text-center sm:text-center md:text-center">
           {translations?.description ||
             "I am a professional in technology and software development with a unique background that encompasses both security and criminal intelligence as well as programming. I began my career as a Systems Analyst and Software Developer, where I gained solid foundations in system logic and design. Later, I developed my skills in the field of security, specializing in criminal intelligence, which gave me an analytical perspective and a problem-solving approach to complex issues. Today, I work as a Full Stack Web Developer, with a specialization in Backend."}
@@ -57,7 +55,6 @@ export default function AboutMe() {
           </p>
         </div>
 
-        {/* Texto final con justificación o centrado */}
         <p className=" mt-2 sm:mt-2 text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words  text-center sm:text-center md:text-center">
           {translations?.final ||
             "My focus is on developing efficient and scalable solutions, leveraging both backend logic and frontend user experience to create comprehensive and high-impact applications."}

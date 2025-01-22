@@ -20,7 +20,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center items-center mt-10">
         <Estadisticas />
       </div>
       <div className="min-h-screen flex flex-col bg-slate-800 bg-transparent mb-80 mt-5">

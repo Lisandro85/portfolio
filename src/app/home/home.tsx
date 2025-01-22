@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex items-center justify-center mt-10 mb-5 px-4">
+      <div className="flex items-center justify-center mt-20 mb-5 px-4">
         <div className="w-full mx-1 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md overflow-hidden mb-6 mt-10">
           <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-8">
             {/* Imagen */}

@@ -7,6 +7,8 @@ import {
   Github,
   Mail,
 } from "lucide-react";
+import { title } from "process";
+import { JSX } from "react";
 
 export const socialNetworks = [
   {
@@ -26,29 +28,34 @@ export const socialNetworks = [
     src: "mailto:lisandrobedotti@hotmail.com",
   },
 ];
-
-export const itemsNavbar = [
+type NavbarTranslationKeys = "home" | "about" | "projects" | "contact";
+export const itemsNavbar: {
+  id: number;
+  titleKey: NavbarTranslationKeys;
+  icon: JSX.Element;
+  link: string;
+}[] = [
   {
     id: 1,
-    title: "Home",
+    titleKey: "home",
     icon: <HomeIcon size={25} color="#06d6a0" strokeWidth={1} />,
     link: "/home",
   },
   {
     id: 2,
-    title: "About",
+    titleKey: "about",
     icon: <UserRound size={25} color="#06d6a0" strokeWidth={1} />,
     link: "/about",
   },
   {
     id: 3,
-    title: "Projects",
+    titleKey: "projects",
     icon: <CodeSquare size={25} color="#06d6a0" strokeWidth={1} />,
     link: "/projects",
   },
   {
     id: 4,
-    title: "Contact",
+    titleKey: "contact",
     icon: <Speech size={25} color="#06d6a0" strokeWidth={1} />,
     link: "/contact",
   },

@@ -16,7 +16,7 @@ export default function Carrusel() {
     <div className="flex justify-center items-center">
       <div className="relative pb-2 max-w-sm mb-40 mx-1 bg-[rgba(0,109,119,0.8)] rounded-lg">
         <h1 className="text-center p-4 text-4xl font-bold text-[#06d6a0] font-Amatic-SC">
-          Skills Tech:
+          Tech Skills:
         </h1>
         <div className="flex justify-center items-center px-4 pb-2">
           <img

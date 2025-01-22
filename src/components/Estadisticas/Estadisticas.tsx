@@ -3,6 +3,11 @@ import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer } from "recharts";
 import useTranslations from "../HoockTraslate/hookTraslate";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A28EFF"];
+type Repo = {
+  language?: string | null;
+  name: string;
+  id: number;
+};
 
 const Estadisticas = () => {
   const translations = useTranslations("statistics");
@@ -19,7 +24,7 @@ const Estadisticas = () => {
         const repos = await response.json();
 
         const languageCount: { [key: string]: number } = {};
-        repos.forEach((repo: any) => {
+        repos.forEach((repo: Repo) => {
           if (repo.language) {
             languageCount[repo.language] =
               (languageCount[repo.language] || 0) + 1;
@@ -61,7 +66,6 @@ const Estadisticas = () => {
           ))}
         </ul>
 
-        {/* Gráfico con ResponsiveContainer */}
         <div className="w-full sm:w-11/12">
           <ResponsiveContainer width="100%" height={250}>
             <PieChart>
@@ -70,7 +74,7 @@ const Estadisticas = () => {
                 dataKey="value"
                 cx="50%"
                 cy="50%"
-                outerRadius="70%" // Ajusta el tamaño del gráfico
+                outerRadius="70%"
                 fill="#8884d8"
               >
                 {languageData.map((entry, index) => (

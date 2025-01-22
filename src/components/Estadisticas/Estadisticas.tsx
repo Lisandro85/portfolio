@@ -46,8 +46,8 @@ const Estadisticas = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center max-w-screen-sm mx-auto p-4 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md mt-28">
-      <h2 className="text-4xl  text-[#52efc2] mb-4 font-Amatic-SC font-bold">
+    <div className="w-full max-w-sm overflow-hidden bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md p-4 mt-20">
+      <h2 className="text-4xl text-center text-[#52efc2] mb-4 font-Amatic-SC font-bold">
         {translations.title}
       </h2>
       <div className="flex flex-col sm:flex-row w-full justify-center items-center sm:space-y-0 sm:space-x-2">

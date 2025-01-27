@@ -78,7 +78,7 @@
       "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
       "features": "Catalogo di film"
     },
-    "seeRepository": "Vedi il Repositorio"
+    "seeRepository": "<Codice/>"
   },
   "navBar": {
     "home": "Home",

@@ -55,7 +55,7 @@ const Estadisticas = () => {
           {languageData.map((language, index) => (
             <li
               key={language.name}
-              className="flex items-center mb-1 text-2xl text-[#52efc2] font-Amatic-SC font-bold"
+              className=" flex items-center mb-1 text-2xl text-[#52efc2] font-Amatic-SC font-bold"
             >
               <span
                 className="w-4 h-4 rounded-full mr-2"

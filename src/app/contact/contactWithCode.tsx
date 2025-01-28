@@ -24,11 +24,17 @@ export default function contactWithCode() {
             text="Linkedin"
             link="https://www.linkedin.com/in/lisandro-bedotti"
           />
+          <p className="text-gray-400 ml-12 sm:ml-14 md:ml-16 lg:ml-20">
+            {"/>"}
+          </p>
           <ContactMethod
             icon={<GithubIcon />}
             text="Github"
             link="https://github.com/Lisandro85"
           />
+          <p className="text-gray-400 ml-12 sm:ml-14 md:ml-16 lg:ml-20">
+            {"/>"}
+          </p>
           <ContactMethod
             icon={<Mail />}
             text="Mail"

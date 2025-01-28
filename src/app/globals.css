@@ -51,3 +51,12 @@ a {
   font-family: "Amatic SC", cursive; /* Cambia esto por la fuente que prefieras */
   font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */
 }
+
+/* PROJECTS */
+.titulo {
+  @apply font-bold text-[#3ae8d4] font-Amatic-SC;
+}
+
+.description {
+  @apply font-bold text-[#52efc2] font-Amatic-SC;
+}

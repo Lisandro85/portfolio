@@ -53,7 +53,7 @@ const Navbar = () => {
           {itemsNavbar.map((item) => (
             <div
               key={item.id}
-              className={`px-2 py-1 md:px-3 md:py-2 lg:px-4 lg:py-3 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${
+              className={`px-2 py-1 md:px-3 md:py-2 lg:px-2 lg:py-1 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${
                 router === item.link && "bg-secondary"
               }`}
             >
@@ -72,14 +72,15 @@ const Navbar = () => {
       </nav>
 
       {/* Menú de idiomas al final de la navbar */}
-      <div className="absolute right-4 top-1 mt-0 sm:right-3 sm:top-1 ">
+      <div className="absolute right-4 top-1 mt-0 sm:right-2 sm:top-1 flex flex-col justify-center">
         <div className="relative" ref={langMenuRef}>
           <button
             className="text-[#06d6a0] text-2xl sm:text-3xl font-bold font-Amatic-SC p-2 rounded-full bg-[#006d77cc] hover:bg-[#006d77cc] transition-colors"
             onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
           >
-            <Globe size={25} color="#06d6a0" />{" "}
+            <Globe size={25} color="#06d6a0" />
           </button>
+
           {isLangMenuOpen && (
             <div className="absolute right-0 bg-[rgba(0,0,0,0.7)] text-[#06d6a0] p-2 mt-2 rounded-md shadow-lg z-50">
               <button

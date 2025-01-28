@@ -23,16 +23,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </a>
       </div>
       <div>
-        <h3 className="text-4xl font-bold text-[#3ae8d4] font-Amatic-SC">
-          {translations.title || title}
-        </h3>
+        <h3 className="text-4xl titulo">{translations.title || title}</h3>
       </div>
-      <div>
-        <p className="text-2xl text-[#52efc2]  font-Amatic-SC font-bold">
+      <div className="">
+        <p className="text-2xl description">
           <span className="font-bold text-[#3ae8d4]">Technologies:</span>{" "}
           {translations.technologies || technologies}
         </p>
-        <p className="text-2xl text-[#52efc2]  font-Amatic-SC font-bold">
+        <p className="text-2xl description">
           <span className="font-bold text-[#3ae8d4]">Features:</span>{" "}
           {translations.features || features}
         </p>
@@ -42,10 +40,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={repositoryUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="gap-2 p-2 flex justify-center items-center text-2xl text-center font-bold text-[#3ae8d4] hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC rounded-lg border-2  border-[#3ae8d4]"
+          className="gap-2 p-2 flex justify-center items-center text-2xl text-center titulo hover:text-[#76c893] transition-colors duration-300 font-Amatic-SC rounded-lg border-2  border-[#3ae8d4]"
         >
           {translations.seeRepository || "See Repository"}
-          <Github size={24} className="inline-block ml-2" />
+          <Github size={24} color={"black"} className="inline-block ml-2" />
         </a>
       </div>
     </div>

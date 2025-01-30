@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer } from "recharts";
 import useTranslations from "../HoockTraslate/hookTraslate";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A28EFF"];
+const COLORS = ["#00A9E0", "#00C49F", "#FFBB28", "#FF8042", "#A28EFF"];
 
 type Repo = {
   language?: string | null;

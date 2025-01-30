@@ -7,7 +7,7 @@ export default function AboutMe() {
   const translations = useTranslations("about");
 
   return (
-    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md  mb-80 px-4 py-4 mt-28">
+    <div className="mx-5 bg-[rgba(0,109,119,0.8)] rounded-lg shadow-md  mb-48 px-4 py-4 mt-28">
       <div className="max-w-4xl mx-auto text-left px-4">
         <p className="text-4xl sm:text-3xl md:text-3xl leading-snug sm:leading-snug md:leading-snug text-[#06d6a0] font-bold font-Amatic-SC break-words text-center sm:text-center md:text-center">
           {translations?.description ||

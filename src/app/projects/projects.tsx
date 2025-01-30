@@ -23,7 +23,7 @@ export default function Projects() {
       <div className="flex flex-row justify-center items-center mt-10">
         <Estadisticas />
       </div>
-      <div className="min-h-screen flex flex-col  bg-slate-800 bg-transparent mb-80 mt-5">
+      <div className="min-h-screen flex flex-col  bg-slate-800 bg-transparent mb-48 mt-5">
         <div className="mt-6 flex-grow px-4 py-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             {projects.map((project, index) => (

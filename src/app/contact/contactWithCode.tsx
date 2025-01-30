@@ -4,8 +4,8 @@ import ContactMethod from "./contactMethod";
 export default function contactWithCode() {
   return (
     <>
-      <div className="flex items-center justify-center mt-24 p-4">
-        <div className="w-full max-w-xl bg-[rgba(0,0,0,0.8)] p-4 1lg:px-8 rounded-lg shadow-xl ">
+      <div className="flex items-center justify-center mt-24 p-4 mb-48">
+        <div className="w-full max-w-xl bg-[rgba(0,0,0,0.8)] p-4 1lg:px-8 rounded-lg shadow-xl">
           <p>
             <span className="text-violet-500">if {""}</span>
             <span className="text-blue-300">

@@ -15,6 +15,14 @@
   },
 
   "projects": {
+    "project9": {
+      "videoUrl": "",
+      "imageUrl": "./images/underC.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/planificador-de-gastos",
+      "title": "Expense and budget control",
+      "technologies": "React(context Api), TypeScript, TailwindCSS",
+      "features": "It allows for tracking daily expenses, against an initial budget"
+    },
     "project8": {
       "videoUrl": "https://youtu.be/UC9PfVwOfTg",
       "imageUrl": "https://img.youtube.com/vi/UC9PfVwOfTg/0.jpg",

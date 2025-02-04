@@ -13,6 +13,14 @@
     "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
   },
   "projects": {
+    "project9": {
+      "videoUrl": "",
+      "imageUrl": "./images/underC.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/planificador-de-gastos",
+      "title": "Control de gastos y presupuesto",
+      "technologies": "React(context Api), TypeScript, TailwindCSS",
+      "features": "Permite llevar un control de gastos diarios, sobre un presupuesto inicial"
+    },
     "project8": {
       "videoUrl": "https://youtu.be/UC9PfVwOfTg",
       "imageUrl": "https://img.youtube.com/vi/UC9PfVwOfTg/0.jpg",

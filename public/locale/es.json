@@ -13,6 +13,14 @@
     "description": "¡No dudes en contactarme a través de LinkedIn, GitHub o correo electrónico! Siempre estoy abierto a nuevas oportunidades y colaboraciones."
   },
   "projects": {
+    "project10": {
+      "videoUrl": "",
+      "imageUrl": "./images/underC.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/marmify",
+      "title": "MarmiFy",
+      "technologies": "NestJS, Next.js, React, TypeScript, TailwindCSS, TypeORM, PostgreSQL",
+      "features": "Control y gestión de la producción de laboratorio de mármol"
+    },
     "project9": {
       "videoUrl": "",
       "imageUrl": "./images/underC.jpg",

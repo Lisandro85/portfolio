@@ -15,6 +15,14 @@
   },
 
   "projects": {
+    "project10": {
+      "videoUrl": "",
+      "imageUrl": "./images/underC.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/marmify",
+      "title": "MarmiFy",
+      "technologies": "NestJS, Next.js, React, TypeScript, TailwindCSS, TypeORM, PostgreSQL",
+      "features": "Control and management of marble laboratory production"
+    },
     "project9": {
       "videoUrl": "",
       "imageUrl": "./images/underC.jpg",

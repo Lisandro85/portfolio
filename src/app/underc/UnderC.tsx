@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function UnderC() {
   return (
     <>
-      <div className="flex justify-center items-center h-screen mt-10 p-5">
+      <div className="flex justify-center items-center h-screen  p-5 md:mt-10">
         <Image
           width={400}
           height={400}

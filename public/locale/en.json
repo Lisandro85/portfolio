@@ -16,7 +16,7 @@
 
   "projects": {
     "project10": {
-      "videoUrl": "https://bedottiwebsite.vercel.app/underc",
+      "videoUrl": "/underc",
       "imageUrl": "./images/underC.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/marmify",
       "title": "MarmiFy",
@@ -24,7 +24,7 @@
       "features": "Control and management of marble laboratory production"
     },
     "project9": {
-      "videoUrl": "",
+      "videoUrl": "/underc",
       "imageUrl": "./images/underC.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/planificador-de-gastos",
       "title": "Expense and budget control",

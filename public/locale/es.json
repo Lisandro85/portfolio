@@ -14,15 +14,15 @@
   },
   "projects": {
     "project10": {
-      "videoUrl": "",
+      "videoUrl": "/underc",
       "imageUrl": "./images/underC.jpg",
-      "repositoryUrl": "https://bedottiwebsite.vercel.app/underc",
+      "repositoryUrl": "https://github.com/Lisandro85/marmify",
       "title": "MarmiFy",
       "technologies": "NestJS, Next.js, React, TypeScript, TailwindCSS, TypeORM, PostgreSQL",
       "features": "Control y gestión de la producción de laboratorio de mármol"
     },
     "project9": {
-      "videoUrl": "",
+      "videoUrl": "/underc",
       "imageUrl": "./images/underC.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/planificador-de-gastos",
       "title": "Control de gastos y presupuesto",

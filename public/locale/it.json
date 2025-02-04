@@ -16,7 +16,7 @@
     "project10": {
       "videoUrl": "",
       "imageUrl": "./images/underC.jpg",
-      "repositoryUrl": "https://github.com/Lisandro85/marmify",
+      "repositoryUrl": "https://bedottiwebsite.vercel.app/underc",
       "title": "MarmiFy",
       "technologies": "NestJS, Next.js, React, TypeScript, TailwindCSS, TypeORM, PostgreSQL",
       "features": "Controllo e gestione della produzione di laboratorio di marmo"

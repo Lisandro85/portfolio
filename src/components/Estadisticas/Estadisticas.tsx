@@ -65,8 +65,8 @@ const Estadisticas = () => {
             dataKey="value"
             cx="50%"
             cy="50%"
-            outerRadius="60%"
-            label={({ name, percentage }) => `${name} (${percentage}%)`}
+            outerRadius="70%"
+            label={({ name }) => `${name}`}
             labelLine={false}
             className="text-xs sm:text-sm md:text-base"
           >

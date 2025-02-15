@@ -15,6 +15,14 @@
   },
 
   "projects": {
+    "project11": {
+      "videoUrl": "https://youtu.be/OjMHA1aweac",
+      "imageUrl": "https://img.youtube.com/vi/OjMHA1aweac/0.jpg",
+      "repositoryUrl": "https://github.com/Lisandro85/api-express",
+      "title": "REST API",
+      "technologies": "Nodejs, Express, MongoDB, Mongoose, Swagger",
+      "features": " A REST API to perform a user CRUD"
+    },
     "project10": {
       "videoUrl": "/underc",
       "imageUrl": "./images/underC.jpg",
@@ -69,15 +77,15 @@
       "repositoryUrl": "https://github.com/Lisandro85/Buddify",
       "title": "Buddify - Social Network",
       "technologies": "NestJS, TypeORM, TypeScript, PostgreSQL, Next.js, TailwindCSS, React",
-      "features": "Create and join events, user profiles, and activity exploration."
+      "features": "Create and join events, user profiles, and activity exploration"
     },
     "project3": {
       "videoUrl": "https://www.youtube.com/watch?v=IwXr4UKzs64",
       "imageUrl": "https://img.youtube.com/vi/IwXr4UKzs64/0.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/ecommerceDeploy",
       "title": "Ecommerce API",
-      "technologies": "NestJS, PostgreSQL, TypeScript, TypeORM.",
-      "features": "Product, user, and order management."
+      "technologies": "NestJS, PostgreSQL, TypeScript, TypeORM, jwt, Swagger",
+      "features": "Product, user, and order management"
     },
     "project2": {
       "videoUrl": "https://www.youtube.com/watch?v=VizIYWYvxLQ",
@@ -85,7 +93,7 @@
       "repositoryUrl": "https://github.com/Lisandro85/sistema-de-turnos-resto-bar",
       "title": "Rest-Bar Scheduling System",
       "technologies": "TypeScript, PostgreSQL, Express, React.",
-      "features": "Real-time reservations and customer management."
+      "features": "Real-time reservations and customer management"
     },
 
     "project1": {
@@ -93,7 +101,7 @@
       "imageUrl": "https://img.youtube.com/vi/ZJ-Y7EWapTo/0.jpg",
       "repositoryUrl": "https://github.com/Lisandro85/Movies-Plataforma",
       "title": "Movie Platform",
-      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express.",
+      "technologies": "JavaScript, HTML, CSS, Bootstrap, Mongoose, MongoDB, Express",
       "features": "Movie catalog "
     },
     "seeRepository": "<Code/>"
